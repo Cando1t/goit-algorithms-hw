@@ -15,5 +15,12 @@ sorted_arr = heap_sort(arr)
 print("Відсортовані довжини кабелів:", sorted_arr)
 
 
-
+total = sorted_arr[0]+sorted_arr[1]
+general_total=total
+print("затрати на зєднання: ", total)
+for i in range(2, len(sorted_arr)):
+    total = total + sorted_arr[i]
+    print("затрати на зєднання: ", total)
+    general_total = general_total + total
+print("Загальні витрати: ", general_total)
 
